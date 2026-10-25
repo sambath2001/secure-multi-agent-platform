@@ -4,8 +4,6 @@
 
 Three LLM agents (planner, researcher, executor) work together on a research-and-write task over a small document set. They use tools through the Model Context Protocol (MCP). Tool execution runs in its own sandbox per agent, behind guardrails. A test harness measures two things: how often the agents finish the task correctly, and how well the system resists prompt injection.
 
-This is a course project for a Software Engineering class talk on testing LLM-based systems when the output is not deterministic, and a portfolio project for AI and backend roles.
-
 ## Status
 
 | Part | State |
