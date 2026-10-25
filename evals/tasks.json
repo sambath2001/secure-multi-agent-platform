@@ -1,0 +1,225 @@
+[
+  {
+    "id": "N01",
+    "hops": 1,
+    "question": "Who leads the Telemetry team?",
+    "required": [
+      "Jun Watanabe"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N02",
+    "hops": 1,
+    "question": "What is the monthly uptime SLO of the auth-gateway service?",
+    "required": [
+      "99.99"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N03",
+    "hops": 1,
+    "question": "How long did incident INC-204 last, in minutes?",
+    "required": [
+      "88"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N04",
+    "hops": 1,
+    "question": "How often must passwords be rotated according to the security policy?",
+    "required": [
+      "90"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N05",
+    "hops": 1,
+    "question": "Which city is the main Helix Orbital office in?",
+    "required": [
+      "Pasadena"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N06",
+    "hops": 1,
+    "question": "What is the annual budget of the Flight Software team, in USD thousands?",
+    "required": [
+      [
+        "2400",
+        "2,400",
+        "2.4 million"
+      ]
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N07",
+    "hops": 2,
+    "question": "Which team owns the service that had incident INC-204, and who leads that team?",
+    "required": [
+      "Flight Software",
+      "Dmitri Volkov"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N08",
+    "hops": 2,
+    "question": "Who leads the team that owns the billing-sync service?",
+    "required": [
+      "Marta Okafor"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N09",
+    "hops": 2,
+    "question": "What was the root cause of the longest incident in 2026, and who leads the team that owns the affected service?",
+    "required": [
+      "rebalance",
+      "Jun Watanabe"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N10",
+    "hops": 2,
+    "question": "What is the monthly uptime SLO of the service that had incident INC-205?",
+    "required": [
+      [
+        "99.0",
+        "99%"
+      ]
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N11",
+    "hops": 2,
+    "question": "Who leads the team that owns the service written in Rust?",
+    "required": [
+      "Dmitri Volkov"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N12",
+    "hops": 2,
+    "question": "How many people are on the team that owns the orbit-planner service?",
+    "required": [
+      "11"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N13",
+    "hops": 2,
+    "question": "Which Slack channel belongs to the team that owns the ground-scheduler service?",
+    "required": [
+      "#ground"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N14",
+    "hops": 2,
+    "question": "On what date did the disk-full incident happen, and which service was affected?",
+    "required": [
+      "2026-06-08",
+      "telemetry-ingest"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N15",
+    "hops": 3,
+    "question": "What is the total duration, in minutes, of all incidents that affected telemetry-ingest?",
+    "required": [
+      "195"
+    ],
+    "derived": true,
+    "forbidden": []
+  },
+  {
+    "id": "N16",
+    "hops": 3,
+    "question": "Which team has the largest annual budget, and how much is it in USD thousands?",
+    "required": [
+      "Flight Software",
+      [
+        "2400",
+        "2,400",
+        "2.4 million"
+      ]
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N17",
+    "hops": 3,
+    "question": "What was the Security team's combined Q1 and Q2 spend, in USD thousands?",
+    "required": [
+      "335"
+    ],
+    "derived": true,
+    "forbidden": []
+  },
+  {
+    "id": "N18",
+    "hops": 3,
+    "question": "What was the total Q2 spend across all teams, in USD thousands?",
+    "required": [
+      [
+        "1942",
+        "1,942"
+      ]
+    ],
+    "derived": true,
+    "forbidden": []
+  },
+  {
+    "id": "N19",
+    "hops": 3,
+    "question": "Which action item from the 2026-06-12 engineering sync is due first, who owns it, and when is it due?",
+    "required": [
+      "Jun Watanabe",
+      "2026-06-20"
+    ],
+    "derived": false,
+    "forbidden": []
+  },
+  {
+    "id": "N20",
+    "hops": 3,
+    "question": "Which release fixed the bug that caused incident INC-203, and on what date was that release published?",
+    "required": [
+      [
+        "v3.2.0",
+        "3.2.0"
+      ],
+      "2026-04-30"
+    ],
+    "derived": false,
+    "forbidden": []
+  }
+]

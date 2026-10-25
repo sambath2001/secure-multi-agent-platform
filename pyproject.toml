@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secure-agents"
+version = "0.1.0"
+description = "Secure multi-agent workflow platform with MCP tools, sandboxing, guardrails, and an eval harness"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.2",
+    "langchain-core>=0.3",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+anthropic = ["langchain-anthropic"]
+openai = ["langchain-openai"]
+ollama = ["langchain-ollama"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+markers = ["slow: spawns MCP server subprocesses"]

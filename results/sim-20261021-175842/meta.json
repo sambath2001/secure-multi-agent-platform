@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-10-21T21:58:42+00:00",
+  "simulated": true,
+  "model": {
+    "provider": "gullible-sim",
+    "model": "scripted worst-case model"
+  },
+  "suite": "attacks",
+  "configs": [
+    "none",
+    "prompt",
+    "detector",
+    "policy",
+    "full"
+  ],
+  "sandbox": "none",
+  "repeat": 1,
+  "split": "all",
+  "limit": 0,
+  "dataset_hash": "ffb927bc76e28287",
+  "prompt_and_rules_hash": "b62227ada77db83d",
+  "git_commit": null,
+  "python": "3.13.16",
+  "mcp": "2.3.0",
+  "langchain_core": "1.6.13",
+  "price_in_per_mtok": null,
+  "price_out_per_mtok": null,
+  "aborted": null,
+  "planned_trials": 85,
+  "completed_trials": 85
+}

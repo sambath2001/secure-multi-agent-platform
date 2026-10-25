@@ -1,0 +1,22 @@
+# Secrets: this file must be ignored BEFORE the first commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Eval output that is not evidence
+results/scratch/
+results/dryrun-*/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
